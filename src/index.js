@@ -26,3 +26,7 @@ app.listen(PORT, () => {
   console.log(`📍 http://localhost:${PORT}`);
   console.log(`🧪 Test DB: http://localhost:${PORT}/test-db`);
 });
+
+import landsChainRoutes from "./routes/landsChain.js";
+
+app.use("/api/chain/lands", landsChainRoutes);
